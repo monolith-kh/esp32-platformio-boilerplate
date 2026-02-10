@@ -1,11 +1,14 @@
 #include <Arduino.h>
 
+
 void setup() {
-  // put your setup code here, to run once:
-  log_i("Hello esp32");
-  log_d("verbose message");
+  Serial.begin(115200);
+  delay(3000);
+
+  Serial.println("BAAM!!!");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  delay(1000);
 }
